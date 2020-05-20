@@ -1,0 +1,9 @@
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\bin\Debug\Lab 7.exe.config
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\bin\Debug\Lab 7.exe
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\bin\Debug\Lab 7.pdb
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\obj\Debug\Lab 7.csprojAssemblyReference.cache
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\obj\Debug\Lab_7.Properties.Resources.resources
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\obj\Debug\Lab 7.csproj.GenerateResource.cache
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\obj\Debug\Lab 7.exe
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\obj\Debug\Lab 7.pdb
+C:\Users\JENNY\Desktop\Lab 7\Lab 7\obj\Debug\Lab_7.Numero7.resources
