@@ -50,6 +50,12 @@
             this.numero0 = new System.Windows.Forms.Button();
             this.TEXTresultado = new System.Windows.Forms.TextBox();
             this.label_text = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.bote = new System.Windows.Forms.Button();
+            this.History = new System.Windows.Forms.Label();
+            this.Memory = new System.Windows.Forms.Label();
+            this.hay_historial = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -93,7 +99,7 @@
             // 
             // borrar
             // 
-            this.borrar.BackColor = System.Drawing.Color.White;
+            this.borrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.borrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrar.ForeColor = System.Drawing.Color.Black;
             this.borrar.Location = new System.Drawing.Point(231, 149);
@@ -106,7 +112,7 @@
             // 
             // apagar
             // 
-            this.apagar.BackColor = System.Drawing.Color.White;
+            this.apagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.apagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apagar.ForeColor = System.Drawing.Color.Black;
             this.apagar.Location = new System.Drawing.Point(299, 149);
@@ -318,12 +324,87 @@
             this.label_text.Size = new System.Drawing.Size(0, 39);
             this.label_text.TabIndex = 21;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.Aquamarine;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(572, 84);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(136, 271);
+            this.richTextBox1.TabIndex = 22;
+            this.richTextBox1.Text = "";
+            // 
+            // bote
+            // 
+            this.bote.BackColor = System.Drawing.Color.White;
+            this.bote.Font = new System.Drawing.Font("Wingdings 2", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.bote.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bote.Location = new System.Drawing.Point(685, 337);
+            this.bote.Name = "bote";
+            this.bote.Size = new System.Drawing.Size(34, 40);
+            this.bote.TabIndex = 23;
+            this.bote.Text = "3\r\n";
+            this.bote.UseVisualStyleBackColor = false;
+            this.bote.Click += new System.EventHandler(this.bote_basura);
+            // 
+            // History
+            // 
+            this.History.AutoSize = true;
+            this.History.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.History.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.History.Location = new System.Drawing.Point(420, 23);
+            this.History.Name = "History";
+            this.History.Size = new System.Drawing.Size(86, 25);
+            this.History.TabIndex = 24;
+            this.History.Text = "History";
+            this.History.Click += new System.EventHandler(this.History_Click);
+            // 
+            // Memory
+            // 
+            this.Memory.AutoSize = true;
+            this.Memory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Memory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Memory.Location = new System.Drawing.Point(587, 23);
+            this.Memory.Name = "Memory";
+            this.Memory.Size = new System.Drawing.Size(95, 25);
+            this.Memory.TabIndex = 25;
+            this.Memory.Text = "Memory";
+            // 
+            // hay_historial
+            // 
+            this.hay_historial.AutoSize = true;
+            this.hay_historial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hay_historial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.hay_historial.Location = new System.Drawing.Point(421, 62);
+            this.hay_historial.Name = "hay_historial";
+            this.hay_historial.Size = new System.Drawing.Size(137, 20);
+            this.hay_historial.TabIndex = 26;
+            this.hay_historial.Text = "No hay historial ";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.Color.Aquamarine;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.Location = new System.Drawing.Point(421, 89);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(137, 266);
+            this.richTextBox2.TabIndex = 27;
+            this.richTextBox2.Text = "";
+            // 
             // Numero7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
-            this.ClientSize = new System.Drawing.Size(384, 387);
+            this.ClientSize = new System.Drawing.Size(731, 379);
+            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.hay_historial);
+            this.Controls.Add(this.Memory);
+            this.Controls.Add(this.History);
+            this.Controls.Add(this.bote);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label_text);
             this.Controls.Add(this.TEXTresultado);
             this.Controls.Add(this.respuesta);
@@ -380,6 +461,12 @@
         private System.Windows.Forms.Button numero0;
         private System.Windows.Forms.TextBox TEXTresultado;
         private System.Windows.Forms.Label label_text;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button bote;
+        private System.Windows.Forms.Label History;
+        private System.Windows.Forms.Label Memory;
+        private System.Windows.Forms.Label hay_historial;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 
